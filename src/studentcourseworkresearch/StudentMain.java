@@ -188,7 +188,8 @@ public class StudentMain {
                    courseWorkStudent.setAssignment2(Double.valueOf(studentMarks[2]));
                    courseWorkStudent.setWeeklyPracticalWork(Double.valueOf(studentMarks[3]));
                    courseWorkStudent.setFinalExam(Double.valueOf(studentMarks[4]));
-
+                   courseWorkStudent.calculateOverallMark();
+                   
                    studentList.set(index, courseWorkStudent);
                }
 
@@ -220,7 +221,7 @@ public class StudentMain {
                    
                    researchStudent.setFinalOralPresentation(Double.valueOf(studentMarks[1]));
                    researchStudent.setFinalThesis(Double.valueOf(studentMarks[2]));
-                   
+                   researchStudent.calculateOverallMark();
                    studentList.set(index, researchStudent);
                }
            }
