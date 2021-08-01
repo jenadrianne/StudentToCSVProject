@@ -83,10 +83,8 @@ public class ResearchStudent extends Student{
 	   public double calculateOverallMark() {
 
 	       double finalThesisWeighted = finalThesis * 0.8;
-
-	       overallMark = finalOralPresentation + finalThesisWeighted;
-
-	 
+	       double oralPresentation = finalOralPresentation * 0.20;
+	       overallMark = oralPresentation + finalThesisWeighted;
 
 	       return overallMark;
 
