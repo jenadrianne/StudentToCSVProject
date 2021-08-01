@@ -190,6 +190,7 @@ public class StudentMain {
                    courseWorkStudent.setFinalExam(Double.valueOf(studentMarks[4]));
                    courseWorkStudent.calculateOverallMark();
                    
+	               System.out.println("Loaded : \n" + courseWorkStudent + "\n---------------------\n");
                    studentList.set(index, courseWorkStudent);
                }
 
@@ -222,6 +223,9 @@ public class StudentMain {
                    researchStudent.setFinalOralPresentation(Double.valueOf(studentMarks[1]));
                    researchStudent.setFinalThesis(Double.valueOf(studentMarks[2]));
                    researchStudent.calculateOverallMark();
+                   
+	               System.out.println("Loaded : \n" + researchStudent + "\n---------------------\n");
+
                    studentList.set(index, researchStudent);
                }
            }
